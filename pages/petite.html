@@ -1,0 +1,308 @@
+<!DOCTYPE>
+<html lang="fr-FR">
+
+<head>
+	<meta charset="utf-8">
+	<title>Webdoc</title><!-- 
+   <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+   <link rel="shortcut icon" href="../favicon.ico"> -->
+	<link rel="stylesheet" href="../css/menu.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript" src="../js/script.js"></script>
+</head>
+
+	<body>
+		<header>
+         <h3>Quizz des oiseaux</h3>    
+      </header>
+      <nav class="navbar navbar-fixed-top">
+         <div>
+            <div class="nav">
+               <button class="btn-nav">
+               <span class="icon-bar top"></span>
+               <span class="icon-bar middle"></span>
+               <span class="icon-bar bottom"></span>
+               </button>
+            </div>
+
+            <div class="nav-content hideNav hidden">
+               <ul class="nav-list vcenter">
+                  <li class="nav-item"><a class="item-anchor" href="index.html">Adresse</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="about.html">Contact</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="portfolio.html">Faire un don</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="contact.html">Devenir bénévole</a></li>
+               </ul>
+            </div>
+         </div>
+
+         <div id="homeIcon">
+            <a href="start.html"><img src="../img/home.png"></a>
+         </div>
+      </nav>
+
+
+
+		<div id="contenu" onclick="retour(this)">
+   		<div>
+   		   <img id="photo" src="../img/petite.jpg">
+   		</div>
+
+         <div id="quizz">
+         <div class="ligneOn" id="ligne1">
+            <div class="audio" id="audio1">
+             <h3>Niveau 1</h3>
+               <audio controls="controls">
+                  <source src="../son/Alouette Lulu.mp3" type="audio/mp3"/>
+               </audio>
+            </div>
+
+            <div class="r1">
+               <img href="" src="Fausses Réponses/1BecasseauMaubèche.jpg" onclick="non(this)">
+                  <p>A. Bécasseau Maubèche</p>
+            </div>
+
+            <div class="r2">
+               <img href="" src="Bonnes Réponses/Alouettelulu.jpg" onclick="oui1()">
+                  <p>B. Alouette Lulu</p>
+            </div>
+
+            <div class="r3">
+               <img href="" src="Fausses Réponses/1ChevalierBargette.jpg" onclick="non(this)">
+                  <p>C. Chevalier Bargette</p>
+            </div>
+         </div>
+
+         <div class="ligneOff" id="ligne2">
+            <div class="audio" id="audio2">
+             <h3>Niveau 2</h3>
+               <audio controls="controls">
+                  <source src="../son/Balbuzard pêcheur.mp3" type="audio/mp3" />
+               </audio>
+            </div>
+
+            <div class="r1">
+               <img src="Bonnes Réponses/Balbuzard pêcheur.jpg" onclick="oui2(this)">
+                  <p>A. Balbuzard pêcheur</p>
+            </div>
+
+            <div class="r2">
+               <img href="" src="Fausses Réponses/2Cincle Plongeur.jpg" onclick="non(this)">
+                  <p>B. Cincle Plongeur</p>
+            </div>
+
+            <div class="r3">
+               <img href="" src="Fausses Réponses/2Frégate superbe.jpg" onclick="non(this)">
+                  <p>C. Frégate superbe</p>
+            </div>
+         </div>
+
+         <div class="ligneOff" id="ligne3">
+            <div class="audio" id="audio3">
+             <h3>Niveau 3</h3>
+               <audio controls="controls">
+                  <source src="../son/Buse variable.mp3" type="audio/mp3" />
+               </audio>
+            </div>
+
+            <div class="r1">
+               <img href="" src="Bonnes Réponses/Buse variable.jpg" onclick="oui3(this)">
+                  <p>A. Buse variable</p>
+            </div>
+
+            <div class="r2">
+               <img href="" src="Fausses Réponses/3Grue demoiselle.jpg" onclick="non(this)">
+                  <p>B. Grue demoiselle</p>
+            </div>
+
+            <div class="r3">
+               <img href="" src="Fausses Réponses/3Héron pourpré.jpg" onclick="non(this)">
+                  <p>C. Héron pourpré</p>
+            </div>
+         </div>
+
+         <div class="ligneOff" id="ligne4">
+            <div class="audio" id="audio4">
+             <h3>Niveau 4</h3>
+               <audio controls="controls">
+                  <source src="../son/Canard siffleur.mp3" type="audio/mp3" />
+               </audio>
+            </div>
+            
+            <div class="r1">
+               <img href="" src="Fausses Réponses/4Martinet noir.jpg" onclick="non(this)">
+                  <p>A. Martinet noir</p>
+            </div>
+
+            <div class="r2">
+               <img href="" src="Fausses Réponses/4Moineau friquet.jpg" onclick="non(this)">
+                  <p>B. Moineau friquet</p>
+            </div>
+
+            <div class="r3">
+               <img href="" src="Bonnes Réponses/Canard siffleur.jpg" onclick="oui4(this)">
+                  <p>C. Canard siffleur</p>
+            </div>
+         </div>
+
+         <div class="ligneOff" id="ligne5">
+            <div class="audio" id="audio5">
+             <h3>Niveau 5</h3>
+               <audio controls="controls">
+                  <source src="../son/Chouette Hulotte.mp3" type="audio/mp3"/>
+               </audio>
+            </div>
+
+            <div class="r1">
+               <img href="" src="Fausses Réponses/5Pouillot fitis.jpg" onclick="non(this)">
+                  <p>A. Pouillot fitis</p>
+            </div>
+
+            <div class="r2">
+               <img href="" src="Fausses Réponses/5Sarcelle élégante.jpg" onclick="non(this)">
+                  <p>B. Moineau friquet</p>
+            </div>
+
+            <div class="r3">
+               <img href="" src="Bonnes Réponses/Chouette Hulotte.jpg" onclick="oui5(this)">
+                  <p>C. Chouette Hulotte</p>
+            </div>
+         </div>
+
+         <div class="ligneOff" id="ligne6">
+            <div class="audio" id="audio6">
+             <h3>Niveau 6</h3>
+               <audio controls="controls">
+                  <source src="../son/Circaète Jean-Le-Blanc.mp3" type="audio/mp3" />
+               </audio>
+            </div>
+
+            <div class="r1">
+               <img href="" src="Bonnes Réponses/Circaète Jean-Le-Blanc.jpg" onclick="oui6(this)">
+                  <p>A. Circaète Jean-Le-Blanc</p>
+            </div>
+
+            <div class="r2">
+               <img href="" src="Fausses Réponses/6Roselin cramoisi.jpg" onclick="non(this)">
+                  <p>B. Roselin cramoisie</p>
+            </div>
+
+            <div class="r3">
+               <img href="" src="Fausses Réponses/6Traquet rieur.jpg" onclick="non(this)">
+                  <p>C. Traquet rieur</p>
+            </div>
+         </div>
+
+         <div class="ligneOff" id="ligne7">
+            <div class="audio" id="audio7">
+             <h3>Niveau 7</h3>
+               <audio controls="controls">
+                  <source src="../son/Faucon pèlerin.mp3" type="audio/mp3" />
+               </audio>
+            </div>
+
+            <div class="r1">
+               <img href="" src="Fausses Réponses/7Sterne caspienne.jpg" onclick="non(this)">
+                  <p>A. Sterne caspienne</p>
+            </div>
+
+            <div class="r2">
+               <img href="" src="Bonnes Réponses/Faucon pèlerin.jpg" onclick="oui7(this)">
+                  <p>B. Faucon pèlerin</p>
+            </div>
+
+            <div class="r3">
+               <img href="" src="Fausses Réponses/7Talève sultane.jpg" onclick="non(this)">
+                  <p>C. Talève sultane</p>
+            </div>
+         </div>
+
+         <div class="ligneOff" id="ligne8">
+            <div class="audio" id="audio8">
+             <h3>Niveau 8</h3>
+               <audio controls="controls">
+                  <source src="../son/Hirondelle Rousseline.mp3" type="audio/mp3" />
+               </audio>
+            </div>
+
+            <div class="r1">
+               <img href="" src="Fausses Réponses/8Tourterelle des bois.jpg" onclick="non(this)">
+                  <p>A. Tourterelle des bois</p>
+            </div>
+
+            <div class="r2">
+               <img href="" src="Fausses Réponses/8Râle deau.jpg" onclick="non(this)">
+                  <p>B. Râle d'eau</p>
+            </div>
+
+            <div class="r3">
+               <img href="" src="Bonnes Réponses/Hirondelle Rousseline.jpg" onclick="oui8(this)">
+                  <p>C. Hirondelle Rousseline</p>
+            </div>
+         </div>
+
+         <div class="ligneOff" id="ligne9">
+            <div class="audio" id="audio9">
+             <h3>Niveau 9</h3>
+               <audio controls="controls">
+                  <source src="../son/Linotte à bec jaune.mp3" type="audio/mp3" />
+               </audio>
+            </div>
+
+            <div class="r1">
+               <img href="" src="Fausses Réponses/9Rossignol philomèle.jpg" onclick="non(this)">
+                  <p>A. Rossignole philomèle</p>
+            </div>
+
+            <div class="r2">
+               <img href="" src="Bonnes Réponses/Linotte à bec jaune.jpg" onclick="oui9(this)">
+                  <p>B. Linotte à bec jaune</p>
+            </div>
+
+            <div class="r3">
+               <img href="" src="Fausses Réponses/9Puffin majeur.jpg" onclick="non(this)">
+                  <p>C. Puffin majeur</p>
+            </div>
+         </div>
+
+         <div class="ligneOff" id="ligne10">
+            <div class="audio" id="audio10">
+             <h3>Niveau 10</h3>
+               <audio controls="controls">
+                  <source src="../son/Milan Royal.mp3" type="audio/mp3" />
+               </audio>
+            </div>
+
+            <div class="r1">
+               <img href="" src="Fausses Réponses/10Sitelle torchepot.jpg" onclick="non(this)">
+                  <p>A. Sitelle torchepot</p>
+            </div>
+
+            <div class="r2">
+               <img href="" src="Bonnes Réponses/Milan Royal.jpg" onclick="oui10(this)">
+                  <p>B. Milan Royal</p>
+            </div>
+
+            <div class="r3">
+               <img href="" src="Fausses Réponses/10Torcol fourmilier.jpg" onclick="non(this)">
+                  <p>C. Torcol fourmilier</p>
+            </div>
+         </div>
+         <div class="ligneOff" id="ligne11">
+             <h3>Félicitations, tu as terminé le quiz. Pour retourner en arrière, clique sur la flèche du bas.</h3>
+              
+         </div>
+            <a href="voliere.html"><img class="back" id="back" src="../img/back.png"></a>
+         </div>
+		</div>
+
+
+
+
+
+		<footer></footer>
+
+
+      <script src="../js/jquery.js"></script>
+      <script src="../js/script.js"></script>		
+	</body>
+</html>
