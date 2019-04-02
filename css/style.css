@@ -310,6 +310,12 @@ h3{
 	text-align: center;
 	display: block;
 	margin-top: 10%;
+	color: white;
+}
+
+#ligne11 h3{
+	background-color: white;
+	color: green;
 }
 
 .ligneOn p{
