@@ -84,60 +84,71 @@ alert("Mauvaise réponse, essaye encore.");
 
 
 function oui1(el){
+(document.getElementById('audio1').muted = true);
 alert("Bonne réponse, tu peux passer au niveau 2");
 (document.getElementById('ligne1').className) = "ligneOff";
-(document.getElementById('ligne2').className) = "ligneOn";
+(document.getElementById('ligne2').className) = "ligneOn";/*
+console.log(document.getElementById('audio1').children[1].controls);*/
 }
 
 function oui2(el){
+(document.getElementById('audio2').muted = true);
 alert("Bonne réponse, tu peux passer au niveau 3");
 (document.getElementById('ligne2').className) = "ligneOff";
 (document.getElementById('ligne3').className) = "ligneOn";
 }
 
 function oui3(el){
+(document.getElementById('audio3').muted = true);
 alert("Bonne réponse, tu peux passer au niveau 4");
 (document.getElementById('ligne3').className) = "ligneOff";
 (document.getElementById('ligne4').className) = "ligneOn";
 }
 
 function oui4(el){
+(document.getElementById('audio4').muted = true);
 alert("Bonne réponse, tu peux passer au niveau 5");
 (document.getElementById('ligne4').className) = "ligneOff";
 (document.getElementById('ligne5').className) = "ligneOn";
 }
 
 function oui5(el){
+(document.getElementById('audio5').muted = true);
 alert("Bonne réponse, tu peux passer au niveau 6");
 (document.getElementById('ligne5').className) = "ligneOff";
 (document.getElementById('ligne6').className) = "ligneOn";
 }
 
 function oui6(el){
+(document.getElementById('audio6').muted = true);
 alert("Bonne réponse, tu peux passer au niveau 7");
 (document.getElementById('ligne6').className) = "ligneOff";
 (document.getElementById('ligne7').className) = "ligneOn";
 }
 
 function oui7(el){
+(document.getElementById('audio7').muted = true);
 alert("Bonne réponse, tu peux passer au niveau 8");
 (document.getElementById('ligne7').className) = "ligneOff";
 (document.getElementById('ligne8').className) = "ligneOn";
 }
 
 function oui8(el){
+(document.getElementById('audio8').muted = true);
 alert("Bonne réponse, tu peux passer au niveau 9");
 (document.getElementById('ligne8').className) = "ligneOff";
 (document.getElementById('ligne9').className) = "ligneOn";
 }
 
 function oui9(el){
+(document.getElementById('audio9').muted = true);
 alert("Bonne réponse, tu peux passer au niveau 10");
 (document.getElementById('ligne9').className) = "ligneOff";
 (document.getElementById('ligne10').className) = "ligneOn";
 }
 
 function oui10(el){
+(document.getElementById('audio10').muted = true);
 alert("Félicitations, tu as terminé le quiz !");
 (document.getElementById('ligne10').className) = "ligneOff";
 (document.getElementById('ligne11').className) = "ligneOn";
